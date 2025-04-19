@@ -50,6 +50,7 @@ Le script :
 💡 Le script est conçu pour être **auto-suffisant**, il suffit de le lancer pour exécuter tout le programme sans aucune configuration manuelle supplémentaire.
 
 
+
 ## 📖 À propos de l’attracteur de Lorenz
 
 L’attracteur de Lorenz est une structure mathématique en 3D représentant un système dynamique chaotique. Il est souvent utilisé pour illustrer le **comportement imprévisible** de 
