@@ -16,7 +16,7 @@ jobs:
     - uses: actions/checkout@v4
     - name: Log in to GitHub Container Registry (GHCR)
       if: github.ref == 'refs/heads/main'
-      run: echo "${{ secrets.GHCR_TOKEN }}" | docker login ghcr.io -u ${{ secrets.GHCR_USERNAME }} --password-stdin
+      run: echo "${{ secrets.GHCR_TOKEN }}" | docker login ghcr.io -u ${{ secrets.GHCR_USERNAME_LOWER }} --password-stdin
 
     - name: Build Docker image
       run: |
