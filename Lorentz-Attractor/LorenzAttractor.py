@@ -1,13 +1,13 @@
+import random
+from math import sin, cos, radians
+
 import glfw
+import pyrr
 from OpenGL.GL import *
 from OpenGL.GL.shaders import compileProgram, compileShader
 from OpenGL.GLU import *
-import pyrr
-import math
-import numpy as np
 from pyrr import Vector3, vector, vector3, matrix44
-import random
-from math import sin, cos, radians
+
 
 class Camera:
     def __init__(self):
