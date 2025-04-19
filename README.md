@@ -50,6 +50,14 @@ Le script :
 💡 Le script est conçu pour être **auto-suffisant**, il suffit de le lancer pour exécuter tout le programme sans aucune configuration manuelle supplémentaire.
 
 
+## 🐳 Image Docker
+
+L'image Docker est hébergée sur GitHub Container Registry. Pour le récupérer, il suffit juste de taper la commande : 
+```bash
+docker pull ghcr.io/saadiinho/lorenz_attractor:latest
+```
+
+
 
 ## 📖 À propos de l’attracteur de Lorenz
 
