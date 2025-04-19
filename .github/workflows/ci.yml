@@ -1,0 +1,29 @@
+name: Docker Image CI
+
+on:
+  push:
+    branches: [
+      "main",
+      "feature/**"
+    ]
+
+jobs:
+
+  build_publish:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Log in to GitHub Container Registry (GHCR)
+      if: github.ref == 'refs/heads/main'
+      run: echo "${{ secrets.GHCR_TOKEN }}" | docker login ghcr.io -u ${{ secrets.GHCR_USERNAME }} --password-stdin
+
+    - name: Build Docker image
+      run: |
+        docker build -t ghcr.io/${{ secrets.GHCR_USERNAME_LOWER }}/lorenz_attractor:latest .
+
+    - name: Push Docker image
+      if: github.ref == 'refs/heads/main'
+      run: docker push ghcr.io/${{ secrets.GHCR_USERNAME_LOWER }}/lorenz_attractor:latest
+
+
