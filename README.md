@@ -56,7 +56,7 @@ L'image Docker est hébergée sur GitHub Container Registry. Pour le récupérer
 ```bash
 docker pull ghcr.io/saadiinho/lorenz_attractor:latest
 ```
-
+Il ne faut pas oublier d'autoriser le conteneur à afficher une interface graphique (voir le fichier ``lorenz_attractor.sh``) 
 
 
 ## 📖 À propos de l’attracteur de Lorenz
