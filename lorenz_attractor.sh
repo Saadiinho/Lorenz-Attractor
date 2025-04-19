@@ -9,3 +9,4 @@ docker run -it --rm \
   ghcr.io/saadiinho/lorenz_attractor:latest
 
 xhost -local:root
+
