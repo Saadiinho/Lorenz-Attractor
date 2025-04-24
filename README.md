@@ -52,7 +52,7 @@ Le script :
 
 ## 🐳 Image Docker
 
-L'image Docker est hébergée sur GitHub Container Registry. Pour le récupérer, il suffit juste de taper la commande : 
+L'image Docker est hébergée sur GitHub Container Registry (vous pouvez le retrouver [ici](https://github.com/users/Saadiinho/packages/container/package/lorenz_attractor)). Pour le récupérer, il suffit juste de taper la commande : 
 ```bash
 docker pull ghcr.io/saadiinho/lorenz_attractor:latest
 ```
